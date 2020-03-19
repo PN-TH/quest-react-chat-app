@@ -4,21 +4,23 @@ import './Contact.css';
 const user = {
     name: 'Carmen Armstrong',
     avatar: 'https://randomuser.me/api/portraits/women/26.jpg',
-    status: false
+    status: true
 }
 
 function isConnected(status){
     if (status) {
         return (
-        <div className="status-online">
-            <p className="status-text">online</p>
-        </div> 
+        <div className="status">
+            <div class="status-online"></div> 
+            <p class="status-text">online</p>
+        </div>
         );
     } else {
         return (
-        <div className="status-offline">
-            <p className="status-text">offline</p>
-        </div> 
+            <div className="status">
+                <div class="status-offline"></div> 
+                <p class="status-text">offline</p>
+            </div>
         );
     }
 }
