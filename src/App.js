@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from './components/Contact'
+import ContactList from './components/ContactList'
 import './App.css';
 
 function App() {
@@ -9,17 +10,18 @@ function App() {
         name="Carmen Armstrong"
         avatar="https://randomuser.me/api/portraits/women/26.jpg"
         status={true} 
-        />
-        <Contact 
+      />
+      <Contact 
         name="Victoria Tucker"
         avatar="https://randomuser.me/api/portraits/women/94.jpg"
         status={false}
-        />
-         <Contact 
+      />
+      <Contact 
         name="Camila Guterriez"
         avatar="https://randomuser.me/api/portraits/women/24.jpg"
-        status={false}
-        />
+        status={true}
+      />
+      <ContactList />
     </div>
   );
 }
