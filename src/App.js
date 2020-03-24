@@ -27,3 +27,5 @@ function App() {
 }
 
 export default App;
+
+sudo chown -R 'thomas' /home/'thomas'/.composer
